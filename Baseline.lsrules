@@ -1,0 +1,651 @@
+{
+  "description" : "",
+  "name" : "Baseline",
+  "rules" : [
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "apple.com",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "apple.com",
+        "cdn-apple.com",
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/1Password.app\/Contents\/MacOS\/1Password",
+      "remote-domains" : "1password.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/1Password.app\/Contents\/MacOS\/1Password",
+      "remote-domains" : "agilebits.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/1Password.app\/Contents\/MacOS\/1Password",
+      "remote-domains" : "cachefly.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/Frameworks\/Accounts.framework\/Versions\/A\/Support\/accountsd",
+      "remote-hosts" : "p144-contacts.icloud.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/Frameworks\/Accounts.framework\/Versions\/A\/Support\/accountsd",
+      "remote-hosts" : "premium57.web-hosting.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Arc.app\/Contents\/MacOS\/Arc",
+      "remote-hosts" : "content.arc.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Arc.app\/Contents\/MacOS\/Arc",
+      "remote-hosts" : "releases.arc.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Arc.app\/Contents\/MacOS\/Arc",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Arc.app\/Contents\/MacOS\/Arc",
+      "remote-hosts" : "update.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Arc.app\/Contents\/MacOS\/Arc",
+      "remote-hosts" : "mobile.launchdarkly.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CloudKitDaemon.framework\/Support\/cloudd",
+      "remote-hosts" : "eu-irl-00001.s3.dualstack.eu-west-1.amazonaws.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CloudKitDaemon.framework\/Support\/cloudd",
+      "remote-hosts" : "eu-irl-00003.s3.dualstack.eu-west-1.amazonaws.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CloudKitDaemon.framework\/Support\/cloudd",
+      "remote-hosts" : "gcs-eu-00002.content-storage-download.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CloudKitDaemon.framework\/Support\/cloudd",
+      "remote-hosts" : "gcs-us-00002.content-storage-download.googleapis.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/ColorSlurp.app\/Contents\/MacOS\/ColorSlurp",
+      "remote-hosts" : "api.revenuecat.com"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "ports" : "68",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GameCenterFoundation.framework\/Versions\/A\/gamed",
+      "remote-addresses" : "17.188.169.71"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GameCenterFoundation.framework\/Versions\/A\/gamed",
+      "remote-addresses" : "17.188.169.98"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GameCenterFoundation.framework\/Versions\/A\/gamed",
+      "remote-addresses" : "17.188.178.155"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-addresses" : "35.190.80.1"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "prod-public-otel-alb-1851299546.us-east-1.elb.amazonaws.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "release.axocdn.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "app.gitkraken.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "release.gitkraken.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "api.gitkraken.dev"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/GitKraken.app\/Contents\/MacOS\/GitKraken",
+      "remote-hosts" : "www.gravatar.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "remote-hosts" : "accounts.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "remote-hosts" : "clients.l.google.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Users\/christian\/Library\/Application Support\/Google\/GoogleUpdater\/122.0.6180.0\/GoogleUpdater.app\/Contents\/MacOS\/GoogleUpdater",
+      "remote-hosts" : "update.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.5"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.15"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.21"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.32"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.68"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.79"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "3.161.94.95"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.24.17"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.24.26"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.24.33"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.24.67"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.24.106"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.24.120"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.254.12"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.254.46"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.254.50"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.254.62"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "52.85.254.117"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/JetBrains Toolbox.app\/Contents\/MacOS\/jetbrains-toolbox",
+      "remote-addresses" : "54.76.247.205"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Little Snitch.app\/Contents\/Components\/Little Snitch Software Update.app\/Contents\/MacOS\/Little Snitch Software Update",
+      "remote-domains" : "obdev.at"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Applications\/Mail.app\/Contents\/MacOS\/Mail",
+      "remote-hosts" : "premium57.web-hosting.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/usr\/libexec\/networkserviceproxy",
+      "remote-hosts" : "tether.edge.apple"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/usr\/sbin\/ocspd",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "googleads.g.doubleclick.net"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "static.doubleclick.net"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.google-analytics.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.googleadservices.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.googletagmanager.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "arc.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "releases.arc.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "maxcdn.bootstrapcdn.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "reveal.clearbit.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "cdnjs.cloudflare.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "d34u8crftukxnk.cloudfront.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "cdn.cookielaw.org"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "api.demandbase.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "docs.flutter.dev"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "accounts.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "apis.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "clients1.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "dl.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "maps.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "play.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "tools.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.google.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "fonts.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "jnn-pa.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "tpc.googlesyndication.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "lh3.googleusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "lh5.googleusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "lh6.googleusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "account.jetbrains.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "download.jetbrains.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "download-cdn.jetbrains.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "oauth.account.jetbrains.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "resources.jetbrains.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "cdn.jsdelivr.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "js-agent.newrelic.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "bam.nr-data.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "geolocation.onetrust.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "a11179690159.cdn.optimizely.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "cdn3.optimizely.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "logx.optimizely.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.parallels.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "a.slack-edge.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "slack.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.youtube-nocookie.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "www.youtube.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "i.ytimg.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "ekr.zdassets.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "static.zdassets.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-hosts" : "jbssales.zendesk.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
+      "remote-domains" : "gstatic.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "123",
+      "process" : "\/usr\/bin\/sntp",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/System\/Library\/CoreServices\/Spotlight.app\/Contents\/MacOS\/Spotlight",
+      "remote-domains" : "yahoo.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/syspolicyd",
+      "remote-hosts" : "api.apple-cloudkit.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "123",
+      "process" : "\/usr\/libexec\/timed",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/usr\/libexec\/trustd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/usr\/libexec\/trustd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Warp.app\/Contents\/MacOS\/stable",
+      "remote-hosts" : "securetoken.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Warp.app\/Contents\/MacOS\/stable",
+      "remote-hosts" : "api.segment.io"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Warp.app\/Contents\/MacOS\/stable",
+      "remote-hosts" : "o540343.ingest.sentry.io"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Warp.app\/Contents\/MacOS\/stable",
+      "remote-hosts" : "app.warp.dev"
+    }
+  ]
+}
